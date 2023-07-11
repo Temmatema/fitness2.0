@@ -1623,7 +1623,6 @@ ul {
 }
 
 .header__content-wrap {
-  position: relative;
   height: 100%;
   padding-top: 98px;
   gap: 27px;
@@ -2005,15 +2004,16 @@ ul {
   overflow-wrap: anywhere;
 }
 
-.card__desk {
+.card__heading + p {
   text-align: center;
   color: #495a7d;
   font-size: 14px;
-  margin-bottom: 84px;
+  margin-bottom: 82px;
 }
 
 .card__price {
   display: block;
+  white-space: nowrap;
   color: #103aae;
   font-size: 60px;
   font-family: "Roboto Condensed", arial, sans-serif;
@@ -2054,6 +2054,7 @@ ul {
   border: 2px solid #102654;
   font-weight: 700;
   letter-spacing: 0.6px;
+  white-space: nowrap;
 }
 
 .card__button.focus-visible:focus {
@@ -2425,11 +2426,6 @@ ul {
   padding-bottom: 90px;
 }
 
-.features span,
-h3 {
-  font-family: "Roboto Condensed", arial, sans-serif;
-}
-
 .features__title {
   font-size: 54px;
   font-weight: 600;
@@ -2492,6 +2488,10 @@ h3 {
   margin-top: -10px;
 }
 
+.col__left span {
+  font-family: "Roboto Condensed", arial, sans-serif;
+}
+
 .col-midl {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
@@ -2515,6 +2515,7 @@ h3 {
   line-height: normal;
   color: #ffffff;
   text-align: center;
+  font-family: "Roboto Condensed", arial, sans-serif;
 }
 
 .col-midl__subtext {
@@ -2524,6 +2525,7 @@ h3 {
   line-height: normal;
   text-align: center;
   margin-bottom: 40px;
+  font-family: "Roboto Condensed", arial, sans-serif;
 }
 
 .col-midl__text {
@@ -2546,6 +2548,7 @@ h3 {
 }
 
 .col__right h3 {
+  font-family: "Roboto Condensed", arial, sans-serif;
   font-size: 1.2rem;
   font-weight: 700;
 }
@@ -3018,7 +3021,7 @@ h3 {
   grid-row: 1/3;
 }
 
-.reviews__name {
+.reviews__slide img + p {
   font-size: 1.03rem;
   font-weight: 700;
   line-height: 1;
@@ -3437,9 +3440,9 @@ h3 {
   }
 
   .header__content {
-    -webkit-box-pack: initial;
-    -ms-flex-pack: initial;
-    justify-content: initial;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
   }
 
   .games__button {
@@ -3470,196 +3473,15 @@ h3 {
   }
 }
 
-@media (max-width: 1200px) {
-  .features__grid {
-    padding: 0;
-  }
-
-  .promotion__box {
-    -webkit-box-flex: 1;
-    -ms-flex: auto;
-    flex: auto;
-  }
-
-  .promotion__sidebar {
-    -webkit-box-flex: 1;
-    -ms-flex: auto;
-    flex: auto;
-  }
-}
-
-@media (max-width: 1175px) {
-  .coaches .swiper {
-    width: 559px;
-  }
-}
-
-@media (max-width: 1120px) {
-  .main-footer {
-    -ms-grid-columns: 100%;
-    grid-template-columns: 100%;
-    -ms-grid-rows: auto auto;
-    grid-template-rows: auto auto;
-  }
-
-  .free__wrap {
-    padding: 66px 21.25vw 67px 17.34vw;
-  }
-
-  .contacts__wrap {
-    padding: 70px 21.25vw 70px 17.34vw;
-  }
-}
-
-@media (max-width: 1023px) {
-  .workout .container {
-    -ms-grid-columns: 29.13vw 52.93vw;
-    grid-template-columns: 29.13vw 52.93vw;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
-  }
-
-  .workout__desc-block {
-    margin-left: 0;
-  }
-
-  .tickets__cards {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    gap: 39px;
-  }
-
-  .card {
-    max-width: 442px;
-  }
-
-  .card__wrap {
-    padding: 7.69vw 14.34vw;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-  }
-
-  .card__heading {
-    font-size: 22px;
-  }
-
-  .card__price {
-    font-size: 3.7rem;
-    white-space: nowrap;
-    margin-bottom: 49px;
-  }
-
-  .card__price svg {
-    width: 30px;
-    height: 42px;
-  }
-
-  .card__price::before {
-    width: 31vw;
-    top: -46px;
-  }
-
-  .card__button {
-    width: 206px;
-    height: 64px;
-  }
-
-  .games__content {
-    padding: 30px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
-  }
-
-  .games__text {
-    white-space: normal;
-    margin-bottom: 1.5vw;
-  }
-
-  .features__grid {
-    -ms-grid-columns: 1fr 1fr;
-    grid-template-columns: 1fr 1fr;
-    -ms-grid-rows: 1fr 240px 1fr;
-    grid-template-rows: 1fr 240px 1fr;
-  }
-
-  .row-1 {
-    border-bottom: none;
-  }
-
-  .col-midl {
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 2;
-    grid-column: 1/3;
-    -ms-grid-row: 2;
-    -ms-grid-row-span: 1;
-    grid-row: 2/3;
-    width: 442px;
-    -ms-grid-column-align: center;
-    justify-self: center;
-  }
-
-  .footer h2 {
-    padding-top: 0;
-  }
-
-  .footer__list {
-    width: 65.85vw;
-  }
-}
-
-@media (max-width: 950px) {
-  .promotion__wrap {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-  }
-
-  .promotion__inner-block {
-    -webkit-box-flex: 1;
-    -ms-flex: 1;
-    flex: 1;
-  }
-
-  .sidebar {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: row;
-    flex-direction: row;
-  }
-
-  .sidebar__row {
-    min-height: 211px;
-  }
-}
-
-@media (max-width: 767px) {
+@media (max-width: 1199px) {
   .container {
-    padding: 0 5.86vw;
+    padding: 0 45px;
   }
 
   .header {
     min-height: 554px;
     background-image: url("../img/header-background-tablet.png");
-    background-size: auto;
+    background-size: cover;
   }
 
   .header__top {
@@ -3679,10 +3501,13 @@ h3 {
   }
 
   .header__content {
-    -ms-grid-columns: 113px 211px auto;
-    grid-template-columns: 113px 211px auto;
+    -ms-grid-columns: 113px 211px 353px;
+    grid-template-columns: 113px 211px 353px;
     padding-left: 0;
     min-height: 410px;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
   }
 
   .header__content picture {
@@ -3733,6 +3558,9 @@ h3 {
     flex-direction: column;
     padding-top: 101px;
     padding-bottom: 100px;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
   }
 
   .workout__desc-block {
@@ -3790,7 +3618,7 @@ h3 {
   }
 
   .tickets .container {
-    padding-top: 100px;
+    padding-top: 102px;
   }
 
   .tickets h2 {
@@ -3800,9 +3628,9 @@ h3 {
   }
 
   .tickets img {
-    bottom: -20.6vw;
-    width: 44.98vw;
+    width: auto;
     height: auto;
+    bottom: -159px;
   }
 
   .tickets__buttons {
@@ -3818,68 +3646,58 @@ h3 {
     padding-top: 28px;
   }
 
-  .games {
-    padding-top: 17.7vw;
+  .tickets__cards {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    gap: 41px;
   }
 
-  .games .container {
-    height: 38vw;
+  .card {
+    max-width: 442px;
   }
 
-  .games__content {
-    width: 38.07vw;
-    padding: 6.91vw 4.82vw 5.87vw;
-    -webkit-box-pack: start;
-    -ms-flex-pack: start;
-    justify-content: flex-start;
+  .card__wrap {
+    padding: 60px 113px;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
   }
 
-  .games__head {
-    margin: 0 0 3px;
+  .card__heading {
+    font-size: 22px;
   }
 
-  .games__head h2 {
-    font-size: 46px;
-  }
-
-  .games__data {
-    gap: 9px;
-  }
-
-  .games__lead {
-    font-size: 11px;
-    padding-bottom: 4px;
-  }
-
-  .games__data-wrap {
-    gap: 2px;
-  }
-
-  .games__data-wrap span {
-    font-size: 1.4rem;
-  }
-
-  .games__day {
-    line-height: 1;
-    font-size: 0.59rem;
-  }
-
-  .games__text {
+  .card__price {
+    font-size: 3.7rem;
     white-space: nowrap;
-    font-size: 0.66rem;
-    padding-left: 8px;
-    margin-bottom: 29px;
+    margin-bottom: 48px;
   }
 
-  .games__button {
-    width: 26.34vw;
-    margin: 0 auto;
-    height: 40px;
-    font-size: 0.5rem;
+  .card__price svg {
+    width: 30px;
+    height: 42px;
   }
 
-  .games__image {
-    width: 50.33vw;
+  .card__price::before {
+    width: 24vw;
+    top: -46px;
+  }
+
+  .card__button {
+    width: 206px;
+    height: 64px;
+  }
+
+  .games {
+    padding-top: 133px;
   }
 
   .coaches .container {
@@ -3899,6 +3717,10 @@ h3 {
 
   .coaches__inner-info li {
     font-size: 0.8rem;
+  }
+
+  .coaches .swiper {
+    width: 559px;
   }
 
   .button-prev {
@@ -3925,7 +3747,12 @@ h3 {
     -webkit-column-gap: 31px;
     -moz-column-gap: 31px;
     column-gap: 31px;
+    padding: 0;
     row-gap: 45px;
+    -ms-grid-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    -ms-grid-rows: 1fr 240px 1fr;
+    grid-template-rows: 1fr 240px 1fr;
   }
 
   .col__slogan {
@@ -3938,6 +3765,7 @@ h3 {
 
   .row-1 {
     margin-bottom: 0;
+    border-bottom: none;
   }
 
   .row-2 {
@@ -3949,7 +3777,16 @@ h3 {
   }
 
   .col-midl {
-    padding: 3.92vw 17.62vw;
+    padding: 33px 135px;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-column: 1/3;
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 1;
+    grid-row: 2/3;
+    width: 442px;
+    -ms-grid-column-align: center;
+    justify-self: center;
   }
 
   .col-midl__slogan {
@@ -3986,7 +3823,17 @@ h3 {
   }
 
   .promotion__wrap {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
     gap: 30px;
+  }
+
+  .promotion__box {
+    -webkit-box-flex: 1;
+    -ms-flex: auto;
+    flex: auto;
   }
 
   .promotion__inner-block {
@@ -3997,8 +3844,22 @@ h3 {
     font-size: 9.13vw;
   }
 
+  .promotion__sidebar {
+    -webkit-box-flex: 1;
+    -ms-flex: auto;
+    flex: auto;
+  }
+
   .sidebar {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
     gap: 30px;
+  }
+
+  .sidebar__row {
+    min-height: 211px;
   }
 
   .sidebar__wrap {
@@ -4051,7 +3912,7 @@ h3 {
   }
 
   .reviews .container {
-    padding-top: 77px;
+    padding-top: 80px;
     padding-bottom: 100px;
   }
 
@@ -4073,8 +3934,19 @@ h3 {
     margin-left: auto;
   }
 
+  .main-footer {
+    -ms-grid-columns: 100%;
+    grid-template-columns: 100%;
+    -ms-grid-rows: auto auto;
+    grid-template-rows: auto auto;
+  }
+
   .free input {
     width: 26.73vw;
+  }
+
+  .free__wrap {
+    padding: 66px 21.25vw 67px 17.34vw;
   }
 
   .free__title {
@@ -4097,8 +3969,7 @@ h3 {
   }
 
   .contacts__wrap {
-    padding-top: 63px;
-    padding-bottom: 65px;
+    padding: 63px 21.25vw 65px 17.34vw;
   }
 
   .contacts__grid {
@@ -4133,463 +4004,113 @@ h3 {
   }
 
   .footer__list {
-    width: 71.85vw;
+    width: 65vw;
   }
 
   .footer__link {
-    padding: 15px;
+    padding: 15px 15px 15px 15px;
   }
 }
 
-@media (max-width: 720px) {
-  .footer__list {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: auto auto;
-    grid-template-columns: auto auto;
-    -webkit-column-gap: 60px;
-    -moz-column-gap: 60px;
-    column-gap: 60px;
-    -webkit-box-pack: start;
-    -ms-flex-pack: start;
-    justify-content: start;
+@media (max-width: 1023px) {
+  .card__price::before {
+    width: 27vw;
   }
 
-  .footer__link {
-    padding: 15px 15px 15px 0;
-  }
-}
-
-@media (max-width: 688px) {
-  .coaches .swiper {
-    width: 268px;
-  }
-}
-
-@media (max-width: 675px) {
   .games .container {
-    height: auto;
+    height: 38vw;
+  }
+
+  .games__content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-  }
-
-  .games__content {
-    width: 64.33vw;
-    min-width: 255px;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
+    width: 38.07vw;
+    padding: 6.8vw 4.82vw 6.3vw;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
   }
 
   .games__head {
-    -webkit-box-pack: space-evenly;
-    -ms-flex-pack: space-evenly;
-    justify-content: space-evenly;
+    margin: 0 0 3px;
+  }
+
+  .games__head h2 {
+    font-size: 46px;
+  }
+
+  .games__data {
+    gap: 9px;
+  }
+
+  .games__lead {
+    font-size: 11px;
+    padding-bottom: 4px;
+  }
+
+  .games__data-wrap {
+    gap: 2px;
+  }
+
+  .games__data-wrap span {
+    font-size: 1.4rem;
+  }
+
+  .games__day {
+    line-height: 1;
+    font-size: 0.59rem;
+  }
+
+  .games__text {
+    white-space: nowrap;
+    font-size: 0.66rem;
+    padding-left: 8px;
+    margin-bottom: 29px;
   }
 
   .games__button {
-    width: 100%;
+    width: 26.34vw;
+    margin: 0 auto;
+    height: 40px;
+    font-size: 0.5rem;
   }
 
   .games__image {
-    width: 64.33vw;
-    min-width: 255px;
+    width: 50.33vw;
   }
 
-  .games__image img {
-    min-width: 255px;
+  .footer__list {
+    width: 72vw;
   }
 }
 
-@media (max-width: 620px) {
+@media (max-width: 800px) {
+  .card__price::before {
+    width: 32vw;
+  }
+}
+
+@media (max-width: 767px) {
+  .container {
+    padding: 0 15px;
+  }
+
   .header__content {
     -ms-grid-columns: 113px 175px;
     grid-template-columns: 113px 175px;
     -webkit-box-pack: space-evenly;
     -ms-flex-pack: space-evenly;
     justify-content: space-evenly;
+    position: relative;
   }
 
   .header__content picture {
     display: none;
-  }
-}
-
-@media (max-width: 550px) {
-  .promotion__box {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-  }
-
-  .promotion__inner-block {
-    width: 399px;
-    max-width: 100%;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    padding: 45px 50px;
-  }
-
-  .promotion__inner-block .promotion__fix-price {
-    font-size: 70px;
-    margin-bottom: 13px;
-  }
-
-  .promotion__inner-block p {
-    text-align: center;
-    font-size: 1rem;
-    margin-bottom: 31px;
-  }
-
-  .promotion__inner-block a {
-    margin: auto;
-  }
-
-  .sidebar {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-  }
-
-  .sidebar__row {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-  }
-
-  .sidebar__wrap {
-    -webkit-box-flex: 1;
-    -ms-flex: 1;
-    flex: 1;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    padding-top: 36px;
-  }
-
-  .sidebar__wrap h3 {
-    text-align: center;
-  }
-
-  .sidebar__wrap p {
-    text-align: center;
-    margin-bottom: 14px;
-  }
-
-  .sidebar__wrap a {
-    margin: auto;
-  }
-
-  .answers__buttons {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: 1fr 1fr;
-    grid-template-columns: 1fr 1fr;
-  }
-
-  .answers__btn {
-    width: 100%;
-    font-size: 16px;
-    height: 44px;
-  }
-
-  .accordion__wrapper {
-    padding-right: 0;
-    margin-top: 12px;
-  }
-
-  .reviews .reviews__swiper {
-    width: 227px;
-    height: 336px;
-    margin: 0;
-  }
-
-  .reviews .container {
-    padding-top: 66px;
-    padding-bottom: 69px;
-  }
-
-  .reviews__title {
-    font-size: 32px;
-  }
-
-  .reviews__slide {
-    -ms-grid-columns: 68px 77px;
-    grid-template-columns: 68px 77px;
-    padding: 40px 25px;
-    row-gap: 15px;
-    -webkit-column-gap: 15px;
-    -moz-column-gap: 15px;
-    column-gap: 15px;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
-  }
-
-  .reviews__slide img {
-    width: 68px;
-    height: 68px;
-    -ms-grid-row: 1;
-    -ms-grid-row-span: 1;
-    grid-row: 1/2;
-    margin-left: 5.33vw;
-  }
-
-  .reviews__name {
-    line-height: 28px;
-  }
-
-  .reviews__text {
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 2;
-    grid-column: 1/3;
-    text-align: center;
-  }
-
-  .free input {
-    width: 100%;
-  }
-
-  .free__wrap {
-    padding: 67px 15px 68px;
-  }
-
-  .free__title {
-    font-size: 1.92rem;
-    margin-bottom: 34px;
-  }
-
-  .free__fields {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    gap: 28px;
-    margin-bottom: 38px;
-  }
-
-  .contacts__title {
-    font-size: 32px;
-    margin-bottom: 38px;
-  }
-
-  .contacts__wrap {
-    padding: 65px 15px;
-  }
-
-  .contacts__grid {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-  }
-
-  .contacts__grid::before {
-    content: none;
-  }
-
-  .contacts__phone {
-    -webkit-box-ordinal-group: 2;
-    -ms-flex-order: 1;
-    order: 1;
-  }
-
-  .contacts__email {
-    -webkit-box-ordinal-group: 3;
-    -ms-flex-order: 2;
-    order: 2;
-  }
-
-  .footer .container {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    -webkit-box-align: start;
-    -ms-flex-align: start;
-    align-items: flex-start;
-    padding-top: 38px;
-    gap: 27px;
-  }
-
-  .footer h2 {
-    font-size: 20px;
-  }
-
-  .footer__list {
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
-  }
-
-  .footer__title {
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 1;
-    grid-column: 1/2;
-  }
-
-  .col-1 {
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 1;
-    grid-column: 1/2;
-  }
-
-  .col-2 {
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 1;
-    grid-column: 1/2;
-  }
-
-  .col-3 {
-    -ms-grid-column: 2;
-    -ms-grid-column-span: 1;
-    grid-column: 2/3;
-    -ms-grid-row: 1;
-    -ms-grid-row-span: 1;
-    grid-row: 1/2;
-  }
-
-  .col-4 {
-    -ms-grid-column: 2;
-    -ms-grid-column-span: 1;
-    grid-column: 2/3;
-    -ms-grid-row: 2;
-    -ms-grid-row-span: 1;
-    grid-row: 2/3;
-  }
-
-  .footer__link {
-    font-size: 0.9rem;
-    padding: 10px 15px 12px 0;
-  }
-}
-
-@media (max-width: 528px) {
-  .features__title {
-    padding-right: 0;
-  }
-
-  .features__grid {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-  }
-
-  .col {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-  }
-
-  .col__left {
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    padding-top: 0;
-  }
-
-  .col-midl {
-    width: 100vw;
-    margin-left: -5.86vw;
-  }
-
-  .col__right {
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-  }
-
-  .col__right h3 {
-    font-size: 17px;
-    margin-bottom: 2px;
-  }
-
-  .col__right p {
-    text-align: center;
-    padding: 0 30px;
-  }
-}
-
-@media (max-width: 360px) {
-  .coaches__button {
-    width: 19px;
-    height: 19px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-  }
-
-  .coaches__button svg {
-    width: inherit;
-    height: inherit;
-  }
-
-  .button-prev {
-    left: -15px;
-  }
-
-  .button-next {
-    right: -15px;
-  }
-}
-
-@media (max-width: 319px) {
-  .container {
-    padding: 0 15px;
-  }
-
-  .header {
-    min-height: 153.61vw;
-  }
-
-  .header__top {
-    padding-top: 15px;
-  }
-
-  .header__heading {
-    font-size: 20px;
-    line-height: 22px;
-    letter-spacing: 0.4px;
-  }
-
-  .header__phone {
-    font-size: 20px;
-    line-height: 25px;
-    letter-spacing: 0.2px;
-  }
-
-  .header__content {
-    -ms-grid-columns: 35.42vw 54.86vw;
-    grid-template-columns: 35.42vw 54.86vw;
   }
 
   .header__content-wrap {
@@ -4597,24 +4118,13 @@ h3 {
     gap: 23px;
   }
 
-  .header__desc {
-    padding-top: 38px;
-    font-size: 0.79rem;
-  }
-
-  .header__subtitle {
-    font-size: 28px;
-    padding-right: 0;
-  }
-
-  .header__title {
-    font-size: 23.51vw;
-    letter-spacing: 1.1px;
-  }
-
   .header__btn {
-    margin-top: 7px;
-    width: 89.97vw;
+    position: absolute;
+    bottom: 0;
+    width: 80%;
+    left: 0;
+    right: 0;
+    margin: auto;
   }
 
   .workout .container {
@@ -4646,59 +4156,8 @@ h3 {
     margin-bottom: 17px;
   }
 
-  .workout__preview picture {
-    width: 100vw;
-    margin-left: -15px;
-    margin-bottom: 40px;
-  }
-
-  .workout__video {
-    width: 100vw;
-    max-width: none;
-    margin: 0 0 0 -15px;
-  }
-
-  .workout__video iframe {
-    max-width: none;
-    width: 100vw;
-  }
-
-  .workout__video[data-is-play=false]::after {
-    background-image: url("../img/main/preview-mobile.jpg");
-  }
-
-  .tickets .container {
-    padding-top: 68px;
-    padding-bottom: 70px;
-  }
-
-  .tickets h2 {
-    font-size: 32px;
-  }
-
   .tickets img {
     display: none;
-  }
-
-  .tickets__buttons {
-    margin-bottom: 34px;
-  }
-
-  .tickets__buttons-wrap {
-    gap: 0;
-    width: 100%;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
-  }
-
-  .tickets__button {
-    font-size: 14px;
-    padding-top: 26px;
-  }
-
-  .tickets__cards {
-    gap: 36px;
   }
 
   .card {
@@ -4714,7 +4173,7 @@ h3 {
     margin-bottom: 12px;
   }
 
-  .card__desk {
+  .card__heading + p {
     margin-bottom: 65px;
   }
 
@@ -4729,6 +4188,10 @@ h3 {
   }
 
   .card__price::before {
+    width: 31vw;
+  }
+
+  .card__price::before {
     top: -35px;
   }
 
@@ -4736,19 +4199,22 @@ h3 {
     padding-top: 71px;
   }
 
-  .games__content {
-    width: 100%;
-    padding: 15.99vw 11.6vw 16.3vw;
-    -webkit-box-align: start;
-    -ms-flex-align: start;
-    align-items: flex-start;
+  .games .container {
+    height: auto;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
   }
 
-  .games__head {
-    -webkit-box-pack: start;
-    -ms-flex-pack: start;
-    justify-content: flex-start;
-    margin-bottom: 7px;
+  .games__content {
+    width: 64.33vw;
+    min-width: 255px;
+    padding-top: 40px;
+    padding-bottom: 40px;
   }
 
   .games__head:first-child {
@@ -4756,12 +4222,16 @@ h3 {
   }
 
   .games__button {
-    font-size: 0.5rem;
-    width: 202px;
+    width: 100%;
   }
 
   .games__image {
-    width: 100%;
+    width: 64.33vw;
+    min-width: 255px;
+  }
+
+  .games__image img {
+    min-width: 255px;
   }
 
   .coaches {
@@ -4833,10 +4303,21 @@ h3 {
   }
 
   .features__grid {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
     row-gap: 0;
   }
 
   .col {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
     gap: 16px;
   }
 
@@ -4849,10 +4330,15 @@ h3 {
   }
 
   .col__left {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding-top: 0;
     margin-top: 0;
   }
 
   .col-midl {
+    width: 100vw;
     margin-top: 44px;
     padding: 35px 65px;
     margin-left: -15px;
@@ -4868,6 +4354,22 @@ h3 {
     margin-bottom: 16px;
   }
 
+  .col__right {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+
+  .col__right h3 {
+    font-size: 17px;
+    margin-bottom: 2px;
+  }
+
+  .col__right p {
+    text-align: center;
+    padding: 0 30px;
+  }
+
   .promotion .container {
     padding-top: 64px;
     padding-bottom: 70px;
@@ -4877,6 +4379,82 @@ h3 {
     font-size: 32px;
     letter-spacing: 0.96px;
     margin-bottom: 44px;
+  }
+
+  .promotion__wrap {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+
+  .promotion__box {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+
+  .promotion__inner-block {
+    width: 291px;
+    max-width: 100%;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding: 45px 50px;
+  }
+
+  .promotion__inner-block .promotion__fix-price {
+    font-size: 70px;
+    margin-bottom: 13px;
+  }
+
+  .promotion__inner-block p {
+    text-align: center;
+    font-size: 1rem;
+    margin-bottom: 31px;
+  }
+
+  .promotion__inner-block a {
+    margin: auto;
+  }
+
+  .sidebar {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+
+  .sidebar__row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+
+  .sidebar__wrap {
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding-top: 36px;
+  }
+
+  .sidebar__wrap h3 {
+    text-align: center;
+  }
+
+  .sidebar__wrap p {
+    text-align: center;
+    margin-bottom: 14px;
   }
 
   .answers .container {
@@ -4894,6 +4472,19 @@ h3 {
     gap: 28px;
   }
 
+  .answers__buttons {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .answers__btn {
+    width: 100%;
+    font-size: 16px;
+    height: 44px;
+  }
+
   .accordion__element {
     padding: 20px 0 20px;
   }
@@ -4901,6 +4492,11 @@ h3 {
   .accordion__button {
     width: 32px;
     height: 32px;
+  }
+
+  .accordion__wrapper {
+    padding-right: 0;
+    margin-top: 12px;
   }
 
   .accordion__lead {
@@ -4915,6 +4511,48 @@ h3 {
     line-height: 22px;
   }
 
+  .reviews .reviews__swiper {
+    width: 227px;
+    height: 336px;
+    margin: 0;
+  }
+
+  .reviews .container {
+    padding-top: 70px;
+    padding-bottom: 69px;
+  }
+
+  .reviews__title {
+    font-size: 32px;
+  }
+
+  .reviews__slide {
+    -ms-grid-columns: 68px 77px;
+    grid-template-columns: 68px 77px;
+    padding: 40px 25px;
+    row-gap: 15px;
+    -webkit-column-gap: 15px;
+    -moz-column-gap: 15px;
+    column-gap: 15px;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+  }
+
+  .reviews__slide img + p {
+    line-height: 28px;
+  }
+
+  .reviews__text {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-column: 1/3;
+    text-align: center;
+  }
+
   .reviews__prev-btn {
     -webkit-transform: scale(0.6);
     -ms-transform: scale(0.6);
@@ -4927,10 +4565,283 @@ h3 {
     transform: scale(0.6) rotateZ(180deg);
   }
 
+  .free input {
+    width: 100%;
+  }
+
+  .free__wrap {
+    padding: 67px 15px 68px;
+  }
+
+  .free__title {
+    font-size: 1.92rem;
+    margin-bottom: 34px;
+  }
+
+  .free__fields {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    gap: 28px;
+    margin-bottom: 38px;
+  }
+
+  .contacts__title {
+    font-size: 32px;
+    margin-bottom: 38px;
+  }
+
+  .contacts__wrap {
+    padding: 65px 15px;
+  }
+
+  .contacts__grid {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+
+  .contacts__grid::before {
+    content: none;
+  }
+
+  .contacts__phone {
+    -webkit-box-ordinal-group: 2;
+    -ms-flex-order: 1;
+    order: 1;
+  }
+
+  .contacts__email {
+    -webkit-box-ordinal-group: 3;
+    -ms-flex-order: 2;
+    order: 2;
+  }
+
+  .footer .container {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding-top: 38px;
+    gap: 27px;
+  }
+
+  .footer h2 {
+    font-size: 20px;
+  }
+
   .footer__list {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: auto auto;
+    grid-template-columns: auto auto;
+    -webkit-column-gap: 60px;
+    -moz-column-gap: 60px;
+    column-gap: 60px;
     -webkit-box-pack: start;
     -ms-flex-pack: start;
     justify-content: start;
+  }
+
+  .footer__title {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1/2;
+  }
+
+  .col-1 {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1/2;
+  }
+
+  .col-2 {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1/2;
+  }
+
+  .col-3 {
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
+    grid-column: 2/3;
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    grid-row: 1/2;
+  }
+
+  .col-4 {
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
+    grid-column: 2/3;
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 1;
+    grid-row: 2/3;
+  }
+
+  .footer__link {
+    font-size: 0.9rem;
+    padding: 10px 15px 12px 0;
+  }
+}
+
+@media (max-width: 550px) {
+  .coaches__button {
+    width: 19px;
+    height: 19px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+
+  .coaches__button svg {
+    width: inherit;
+    height: inherit;
+  }
+
+  .sidebar__wrap a {
+    margin: auto;
+  }
+
+  .reviews__slide img {
+    width: 68px;
+    height: 68px;
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    grid-row: 1/2;
+    margin-left: 5.33vw;
+  }
+
+  .footer .container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+  }
+}
+
+@media (max-width: 320px) {
+  .header {
+    min-height: 153.61vw;
+  }
+
+  .header__top {
+    padding-top: 15px;
+  }
+
+  .header__heading {
+    font-size: 20px;
+    line-height: 22px;
+    letter-spacing: 0.4px;
+  }
+
+  .header__phone {
+    font-size: 20px;
+    line-height: 25px;
+    letter-spacing: 0.2px;
+  }
+
+  .header__content {
+    -ms-grid-columns: 35.42vw 54.86vw;
+    grid-template-columns: 35.42vw 54.86vw;
+  }
+
+  .header__desc {
+    padding-top: 38px;
+    font-size: 0.79rem;
+  }
+
+  .header__subtitle {
+    font-size: 28px;
+    padding-right: 0;
+  }
+
+  .header__title {
+    font-size: 23.51vw;
+    letter-spacing: 1.1px;
+  }
+
+  .header__btn {
+    bottom: 38px;
+    width: 100%;
+  }
+
+  .workout__preview picture {
+    width: 100vw;
+    margin-bottom: 40px;
+  }
+
+  .workout__video {
+    width: 100vw;
+    max-width: none;
+    margin: 0;
+  }
+
+  .workout__video iframe {
+    max-width: none;
+    width: 100vw;
+  }
+
+  .workout__video[data-is-play=false]::after {
+    background-image: url("../img/main/preview-mobile.jpg");
+  }
+
+  .tickets .container {
+    padding-top: 65px;
+    padding-bottom: 70px;
+  }
+
+  .tickets h2 {
+    font-size: 32px;
+  }
+
+  .tickets__buttons {
+    margin-bottom: 34px;
+  }
+
+  .tickets__buttons-wrap {
+    gap: 0;
+    width: 100%;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+  }
+
+  .tickets__button {
+    font-size: 14px;
+    padding-top: 26px;
+  }
+
+  .tickets__cards {
+    gap: 36px;
+  }
+
+  .games__content {
+    width: 100%;
+    padding: 15.99vw 11.6vw 15vw;
+  }
+
+  .games__head {
+    margin-bottom: 7px;
+  }
+
+  .games__button {
+    font-size: 0.5rem;
+    width: 202px;
+  }
+
+  .games__image {
+    width: 100%;
   }
 }
 
@@ -4963,6 +4874,12 @@ h3 {
 
   .card:hover:not(.focus-visible) {
     background: linear-gradient(169deg, rgb(209, 10, 66) 0%, rgb(0, 53, 159) 100%);
+  }
+
+  .card:hover:not(.focus-visible) .card__button {
+    background: linear-gradient(151deg, #ed0233 0%, #003eb7 100%);
+    border: none;
+    color: #ffffff;
   }
 
   .card .card__button:hover:not(.focus-visible) {
