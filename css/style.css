@@ -4853,6 +4853,7 @@ ul {
 
   .workout__video-handle:hover:not(.focus-visible) .play-circle-1 {
     stroke-opacity: 1;
+    stroke: #102654;
   }
 
   .workout__video-handle:hover:not(.focus-visible) .play-circle-2 {
