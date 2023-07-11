@@ -1588,14 +1588,14 @@ ul {
   justify-content: space-between;
 }
 
-.header__heading {
+.header__top h2 {
   font-size: 36px;
   letter-spacing: 0.72px;
   text-transform: uppercase;
   line-height: 40px;
 }
 
-.header__phone {
+.header__top a {
   font-size: 26px;
   letter-spacing: 0.78px;
   line-height: 32px;
@@ -1638,7 +1638,7 @@ ul {
   align-items: flex-end;
 }
 
-.header__desc {
+.header__content p {
   font-size: 0.77rem;
   line-height: 20px;
   font-weight: 300;
@@ -1646,7 +1646,7 @@ ul {
   padding-top: 5.63vw;
 }
 
-.header__subtitle {
+.header__content-wrap h2 {
   font-size: 3.4vw;
   font-weight: 600;
   letter-spacing: 1.44px;
@@ -1659,7 +1659,7 @@ ul {
   overflow-wrap: anywhere;
 }
 
-.header__title {
+.header__content-wrap h1 {
   font-size: 6.9vw;
   font-weight: 800;
   letter-spacing: 3.9px;
@@ -1671,7 +1671,7 @@ ul {
   text-align: right;
 }
 
-.header__title span {
+.header__content-wrap h1 span {
   display: block;
   padding-top: 15px;
 }
@@ -1714,7 +1714,7 @@ ul {
   padding-top: 41px;
 }
 
-.workout__title {
+.workout__desc-block h2 {
   font-size: 3.54vw;
   font-weight: 600;
   line-height: normal;
@@ -1722,20 +1722,20 @@ ul {
   margin-bottom: 11px;
 }
 
-.workout__caption {
+.workout__desc-block h2 + p {
   font-size: 1.12rem;
   font-weight: 500;
   line-height: 150%;
   margin-bottom: 40px;
 }
 
-.workout__text {
+.workout__text-wrap p {
   font-size: 0.9rem;
   font-weight: 400;
   line-height: 24px;
 }
 
-.workout__text:last-child {
+.workout__text-wrap p:last-child {
   margin-top: 7px;
 }
 
@@ -1995,23 +1995,24 @@ ul {
   height: 100%;
 }
 
-.card__heading {
+.card__wrap h3 {
   text-align: center;
   font-size: 1.6vw;
   font-weight: 700;
   line-height: 1;
   margin-bottom: 14px;
   overflow-wrap: anywhere;
+  font-family: "Roboto Condensed", arial, sans-serif;
 }
 
-.card__heading + p {
+.card__wrap p {
   text-align: center;
   color: #495a7d;
   font-size: 14px;
   margin-bottom: 82px;
 }
 
-.card__price {
+.card__wrap span {
   display: block;
   white-space: nowrap;
   color: #103aae;
@@ -2026,12 +2027,12 @@ ul {
   overflow-wrap: anywhere;
 }
 
-.card__price svg {
+.card__wrap span svg {
   width: 2.2vw;
   height: 3.07vw;
 }
 
-.card__price::before {
+.card__wrap span::before {
   content: attr(data-price);
   position: absolute;
   color: #e8e8e8;
@@ -2142,7 +2143,7 @@ ul {
   align-items: flex-start;
 }
 
-.games__lead {
+.games__data-content > span {
   font-size: 16px;
   font-weight: 400;
   line-height: 1;
@@ -2168,14 +2169,14 @@ ul {
   line-height: 1;
 }
 
-.games__day {
+.games__data-wrap p {
   gap: 6px;
   font-size: 14px;
   line-height: 18px;
   font-weight: 400;
 }
 
-.games__text {
+.games__content > p {
   font-weight: 400;
   font-size: 18px;
   margin-bottom: 3.3vw;
@@ -2183,7 +2184,7 @@ ul {
   padding-left: 3px;
 }
 
-.games__button {
+.games__content > a {
   width: 100%;
   height: 4.91vw;
   border: 0.29vw solid #ffffff;
@@ -2195,12 +2196,12 @@ ul {
   transition: opacity 0.3s ease;
 }
 
-.games__button.focus-visible:focus {
+.games__content > a.focus-visible:focus {
   outline: none;
   opacity: 0.6;
 }
 
-.games__button.focus-visible:active {
+.games__content > a.focus-visible:active {
   opacity: 0.6;
 }
 
@@ -2426,7 +2427,7 @@ ul {
   padding-bottom: 90px;
 }
 
-.features__title {
+.features h2 {
   font-size: 54px;
   font-weight: 600;
   line-height: normal;
@@ -2451,8 +2452,9 @@ ul {
   position: relative;
 }
 
-.col__slogan {
+.col__left b {
   font-size: 71px;
+  font-family: "Roboto Condensed", arial, sans-serif;
   font-weight: 700;
   line-height: 1;
   background-image: linear-gradient(169deg, rgb(209, 10, 66) 20%, rgb(0, 65, 202) 80%);
@@ -2509,7 +2511,7 @@ ul {
   max-height: 22.64vw;
 }
 
-.col-midl__slogan {
+.col-midl span {
   font-size: 74px;
   font-weight: 700;
   line-height: normal;
@@ -2518,7 +2520,7 @@ ul {
   font-family: "Roboto Condensed", arial, sans-serif;
 }
 
-.col-midl__subtext {
+.col-midl h3 {
   color: #ffffff;
   font-size: 1.4rem;
   font-weight: 700;
@@ -2528,7 +2530,7 @@ ul {
   font-family: "Roboto Condensed", arial, sans-serif;
 }
 
-.col-midl__text {
+.col-midl p {
   color: #ffffff;
   font-size: 0.89rem;
   line-height: 24px;
@@ -2558,7 +2560,7 @@ ul {
   font-weight: 300;
 }
 
-.col__subtext {
+.col__left span {
   font-size: 0.7rem;
   color: #2e35ac;
   line-height: 1;
@@ -2573,7 +2575,7 @@ ul {
   padding-bottom: 120px;
 }
 
-.promotion__title {
+.promotion h2 {
   font-size: 54px;
   font-weight: 600;
   line-height: normal;
@@ -2622,10 +2624,14 @@ ul {
   margin-bottom: 6px;
 }
 
-.promotion__inner-block .promotion__fix-price {
+.promotion__inner-block b {
   font-size: 70px;
   font-weight: 700;
   margin-bottom: 18px;
+  font-family: "Roboto Condensed", arial, sans-serif;
+  display: block;
+  line-height: 1;
+  color: #ffffff;
 }
 
 .promotion__inner-block p {
@@ -3080,10 +3086,23 @@ ul {
 
 .free button {
   color: #ffffff;
+  width: 100%;
+  height: 55px;
+  border: 3px solid #ffffff;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.7px;
+  text-transform: uppercase;
 }
 
 .free h2 {
   color: #ffffff;
+  font-size: 54px;
+  font-weight: 800;
+  line-height: 1;
+  letter-spacing: 1.62px;
+  margin-bottom: 27px;
 }
 
 .free input {
@@ -3157,14 +3176,6 @@ ul {
   padding: 5.4vw 12.45vw 5.13vw 7.55vw;
 }
 
-.free__title {
-  font-size: 54px;
-  font-weight: 800;
-  line-height: 1;
-  letter-spacing: 1.62px;
-  margin-bottom: 27px;
-}
-
 .free__fields {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -3198,17 +3209,6 @@ ul {
   white-space: nowrap;
 }
 
-.free__btn {
-  width: 100%;
-  height: 55px;
-  border: 3px solid #ffffff;
-  font-size: 12px;
-  font-weight: 700;
-  line-height: normal;
-  letter-spacing: 0.7px;
-  text-transform: uppercase;
-}
-
 .contacts {
   -webkit-box-flex: 1;
   -ms-flex: 1;
@@ -3216,7 +3216,7 @@ ul {
   border-top: 1px solid #74819c;
 }
 
-.contacts__title {
+.contacts h2 {
   font-size: 54px;
   font-weight: 600;
   line-height: normal;
@@ -3444,7 +3444,7 @@ ul {
     justify-content: flex-start;
   }
 
-  .games__button {
+  .games__content > a {
     font-size: 0.6rem;
   }
 
@@ -3487,13 +3487,13 @@ ul {
     padding-top: 40px;
   }
 
-  .header__heading {
+  .header__top h2 {
     font-size: 24px;
     letter-spacing: 0.6px;
     line-height: 20px;
   }
 
-  .header__phone {
+  .header__top a {
     font-size: 24px;
     letter-spacing: 0.4px;
     line-height: 20px;
@@ -3519,22 +3519,22 @@ ul {
     gap: 16px;
   }
 
-  .header__desc {
+  .header__content p {
     padding-top: 67px;
   }
 
-  .header__subtitle {
+  .header__content-wrap h2 {
     font-size: 34px;
     padding-right: 2px;
   }
 
-  .header__title {
+  .header__content-wrap h1 {
     font-size: 4.7rem;
     letter-spacing: 1.4px;
     text-transform: none;
   }
 
-  .header__title span {
+  .header__content-wrap h1 span {
     padding-top: 10px;
   }
 
@@ -3567,7 +3567,7 @@ ul {
     padding-top: 0;
   }
 
-  .workout__title {
+  .workout__desc-block h2 {
     font-size: 42px;
     letter-spacing: 1.26px;
     padding-right: 14px;
@@ -3575,20 +3575,20 @@ ul {
     margin-bottom: 2px;
   }
 
-  .workout__caption {
+  .workout__desc-block h2 + p {
     text-align: center;
     margin-bottom: 35px;
     font-size: 18px;
   }
 
-  .workout__text {
+  .workout__text-wrap p {
     text-align: center;
     padding: 0 7vw;
     margin-bottom: 22px;
     font-size: 0.91rem;
   }
 
-  .workout__text:last-child {
+  .workout__text-wrap p:last-child {
     display: none;
   }
 
@@ -3670,22 +3670,22 @@ ul {
     align-items: center;
   }
 
-  .card__heading {
+  .card__wrap h3 {
     font-size: 22px;
   }
 
-  .card__price {
+  .card__wrap span {
     font-size: 3.7rem;
     white-space: nowrap;
     margin-bottom: 48px;
   }
 
-  .card__price svg {
+  .card__wrap span svg {
     width: 30px;
     height: 42px;
   }
 
-  .card__price::before {
+  .card__wrap span::before {
     width: 24vw;
     top: -46px;
   }
@@ -3735,7 +3735,7 @@ ul {
     padding-bottom: 95px;
   }
 
-  .features__title {
+  .features h2 {
     font-size: 2.59rem;
     padding-left: 0;
     padding-right: 20px;
@@ -3754,7 +3754,7 @@ ul {
     grid-template-rows: 1fr 240px 1fr;
   }
 
-  .col__slogan {
+  .col__left b {
     font-size: 58px;
   }
 
@@ -3788,12 +3788,12 @@ ul {
     justify-self: center;
   }
 
-  .col-midl__slogan {
+  .col-midl span {
     line-height: 1;
     margin-bottom: 5px;
   }
 
-  .col-midl__subtext {
+  .col-midl h3 {
     font-size: 19px;
     margin-bottom: 19px;
   }
@@ -3816,7 +3816,7 @@ ul {
     padding-bottom: 100px;
   }
 
-  .promotion__title {
+  .promotion h2 {
     font-size: 42px;
     margin-bottom: 42px;
   }
@@ -3839,7 +3839,7 @@ ul {
     padding-right: 40px;
   }
 
-  .promotion__inner-block .promotion__fix-price {
+  .promotion__inner-block b {
     font-size: 9.13vw;
   }
 
@@ -3940,18 +3940,18 @@ ul {
     grid-template-rows: auto auto;
   }
 
+  .free h2 {
+    font-size: 42px;
+    letter-spacing: 1px;
+    margin-bottom: 33px;
+  }
+
   .free input {
     width: 26.73vw;
   }
 
   .free__wrap {
     padding: 66px 21.25vw 67px 17.34vw;
-  }
-
-  .free__title {
-    font-size: 42px;
-    letter-spacing: 1px;
-    margin-bottom: 33px;
   }
 
   .free__fields {
@@ -3961,7 +3961,7 @@ ul {
     justify-content: space-between;
   }
 
-  .contacts__title {
+  .contacts h2 {
     letter-spacing: 1px;
     font-size: 42px;
     margin-bottom: 37px;
@@ -4012,7 +4012,7 @@ ul {
 }
 
 @media (max-width: 1023px) {
-  .card__price::before {
+  .card__wrap span::before {
     width: 27vw;
   }
 
@@ -4047,7 +4047,7 @@ ul {
     gap: 9px;
   }
 
-  .games__lead {
+  .games__data-content > span {
     font-size: 11px;
     padding-bottom: 4px;
   }
@@ -4060,19 +4060,19 @@ ul {
     font-size: 1.4rem;
   }
 
-  .games__day {
+  .games__data-wrap p {
     line-height: 1;
     font-size: 0.59rem;
   }
 
-  .games__text {
+  .games__content > p {
     white-space: nowrap;
     font-size: 0.66rem;
     padding-left: 8px;
     margin-bottom: 29px;
   }
 
-  .games__button {
+  .games__content > a {
     width: 26.34vw;
     margin: 0 auto;
     height: 40px;
@@ -4089,7 +4089,7 @@ ul {
 }
 
 @media (max-width: 800px) {
-  .card__price::before {
+  .card__wrap span::before {
     width: 32vw;
   }
 }
@@ -4136,20 +4136,20 @@ ul {
     margin-bottom: 15px;
   }
 
-  .workout__title {
+  .workout__desc-block h2 {
     font-size: 9.9vw;
     padding: 0;
     text-align: left;
     margin-bottom: 7px;
   }
 
-  .workout__caption {
+  .workout__desc-block h2 + p {
     text-align: left;
     padding: 0;
     margin-bottom: 25px;
   }
 
-  .workout__text {
+  .workout__text-wrap p {
     text-align: left;
     padding: 0 8vw 0 0;
     margin-bottom: 17px;
@@ -4167,30 +4167,30 @@ ul {
     padding: 14.5vw 14.34vw;
   }
 
-  .card__heading {
+  .card__wrap h3 {
     font-size: 19px;
     margin-bottom: 12px;
   }
 
-  .card__heading + p {
+  .card__wrap p {
     margin-bottom: 65px;
   }
 
-  .card__price {
+  .card__wrap span {
     font-size: 3rem;
     margin-bottom: 44px;
   }
 
-  .card__price svg {
+  .card__wrap span svg {
     width: 24px;
     height: 33px;
   }
 
-  .card__price::before {
+  .card__wrap span::before {
     width: 31vw;
   }
 
-  .card__price::before {
+  .card__wrap span::before {
     top: -35px;
   }
 
@@ -4220,7 +4220,7 @@ ul {
     gap: 34px;
   }
 
-  .games__button {
+  .games__content > a {
     width: 100%;
   }
 
@@ -4295,7 +4295,7 @@ ul {
     padding-bottom: 32px;
   }
 
-  .features__title {
+  .features h2 {
     font-size: 1.9rem;
     padding-right: 14px;
     margin-bottom: 43px;
@@ -4345,11 +4345,11 @@ ul {
     margin-bottom: 40px;
   }
 
-  .col-midl__slogan {
+  .col-midl span {
     margin-bottom: 0;
   }
 
-  .col-midl__subtext {
+  .col-midl h3 {
     margin-bottom: 16px;
   }
 
@@ -4374,7 +4374,7 @@ ul {
     padding-bottom: 70px;
   }
 
-  .promotion__title {
+  .promotion h2 {
     font-size: 32px;
     letter-spacing: 0.96px;
     margin-bottom: 44px;
@@ -4405,7 +4405,7 @@ ul {
     padding: 45px 50px;
   }
 
-  .promotion__inner-block .promotion__fix-price {
+  .promotion__inner-block b {
     font-size: 70px;
     margin-bottom: 13px;
   }
@@ -4564,17 +4564,17 @@ ul {
     transform: scale(0.6) rotateZ(180deg);
   }
 
+  .free h2 {
+    font-size: 1.92rem;
+    margin-bottom: 34px;
+  }
+
   .free input {
     width: 100%;
   }
 
   .free__wrap {
     padding: 67px 15px 68px;
-  }
-
-  .free__title {
-    font-size: 1.92rem;
-    margin-bottom: 34px;
   }
 
   .free__fields {
@@ -4586,7 +4586,7 @@ ul {
     margin-bottom: 38px;
   }
 
-  .contacts__title {
+  .contacts h2 {
     font-size: 32px;
     margin-bottom: 38px;
   }
@@ -4738,13 +4738,13 @@ ul {
     padding-top: 15px;
   }
 
-  .header__heading {
+  .header__top h2 {
     font-size: 20px;
     line-height: 22px;
     letter-spacing: 0.4px;
   }
 
-  .header__phone {
+  .header__top a {
     font-size: 20px;
     line-height: 25px;
     letter-spacing: 0.2px;
@@ -4755,17 +4755,17 @@ ul {
     grid-template-columns: 35.42vw 54.86vw;
   }
 
-  .header__desc {
+  .header__content p {
     padding-top: 38px;
     font-size: 0.79rem;
   }
 
-  .header__subtitle {
+  .header__content-wrap h2 {
     font-size: 28px;
     padding-right: 0;
   }
 
-  .header__title {
+  .header__content-wrap h1 {
     font-size: 23.51vw;
     letter-spacing: 1.1px;
   }
@@ -4834,7 +4834,7 @@ ul {
     margin-bottom: 7px;
   }
 
-  .games__button {
+  .games__content > a {
     font-size: 0.5rem;
     width: 202px;
   }
@@ -4888,7 +4888,7 @@ ul {
     color: #ffffff;
   }
 
-  .games__button:hover:not(.focus-visible) {
+  .games__content > a:hover:not(.focus-visible) {
     opacity: 0.6;
   }
 
