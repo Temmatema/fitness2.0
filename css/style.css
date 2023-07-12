@@ -1957,6 +1957,16 @@ ul {
   min-height: 31vw;
 }
 
+.card:hover {
+  background: linear-gradient(169deg, rgb(209, 10, 66) 0%, rgb(0, 53, 159) 100%);
+}
+
+.card:hover .card__button {
+  background: linear-gradient(151deg, #ed0233 0%, #003eb7 100%);
+  border: none;
+  color: #ffffff;
+}
+
 .card.focus-visible:focus {
   outline: none;
   background: linear-gradient(169deg, rgb(209, 10, 66) 0%, rgb(0, 53, 159) 100%);
@@ -4882,16 +4892,6 @@ ul {
   .tickets__button:hover:not(.focus-visible) {
     border-color: #d10a42;
     opacity: 1;
-  }
-
-  .card:hover:not(.focus-visible) {
-    background: linear-gradient(169deg, rgb(209, 10, 66) 0%, rgb(0, 53, 159) 100%);
-  }
-
-  .card:hover:not(.focus-visible) .card__button {
-    background: linear-gradient(151deg, #ed0233 0%, #003eb7 100%);
-    border: none;
-    color: #ffffff;
   }
 
   .card .card__button:hover:not(.focus-visible) {
