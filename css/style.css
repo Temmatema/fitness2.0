@@ -2254,6 +2254,14 @@ ul {
   width: 100%;
 }
 
+.coaches__card:hover .coaches__inner-info {
+  z-index: 1;
+}
+
+.coaches__card:hover .coaches__name {
+  opacity: 0;
+}
+
 .coaches__card.focus-visible:focus {
   outline: none;
 }
@@ -4902,14 +4910,6 @@ ul {
 
   .games__content > a:hover:not(.focus-visible) {
     opacity: 0.6;
-  }
-
-  .coaches__card:hover:not(.focus-visible) .coaches__inner-info {
-    z-index: 1;
-  }
-
-  .coaches__card:hover:not(.focus-visible) .coaches__name {
-    opacity: 0;
   }
 
   .coaches__button:hover:not(.focus-visible) {
