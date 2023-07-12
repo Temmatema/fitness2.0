@@ -1694,7 +1694,7 @@ ul {
   color: #103aae;
 }
 
-.header__btn.focus-visible:active {
+.header__btn:active {
   background-color: #ffffff;
   color: #103aae;
 }
@@ -1819,15 +1819,15 @@ ul {
   fill: #102654;
 }
 
-.workout__video-handle.focus-visible:active .play-circle-1 {
+.workout__video-handle:active .play-circle-1 {
   stroke-opacity: 1;
 }
 
-.workout__video-handle.focus-visible:active .play-circle-2 {
+.workout__video-handle:active .play-circle-2 {
   fill: #ffffff;
 }
 
-.workout__video-handle.focus-visible:active .play-path {
+.workout__video-handle:active .play-path {
   fill: #102654;
 }
 
@@ -1840,7 +1840,7 @@ ul {
   stop-color: #102654;
 }
 
-.workout__video-handle stop.focus-visible:active {
+.workout__video-handle stop:active {
   stop-color: #102654;
 }
 
@@ -1933,7 +1933,7 @@ ul {
   opacity: 1;
 }
 
-.tickets__button.focus-visible:active {
+.tickets__button:active {
   opacity: 1;
   border-color: #d10a42;
 }
@@ -1962,7 +1962,7 @@ ul {
   background: linear-gradient(169deg, rgb(209, 10, 66) 0%, rgb(0, 53, 159) 100%);
 }
 
-.card.focus-visible:active {
+.card:active {
   background: linear-gradient(169deg, rgb(209, 10, 66) 0%, rgb(0, 53, 159) 100%);
 }
 
@@ -1972,7 +1972,7 @@ ul {
   color: #ffffff;
 }
 
-.card .card__button.focus-visible:active {
+.card .card__button:active {
   background: linear-gradient(151deg, #ed0233 0%, #003eb7 100%);
   border: none;
   color: #ffffff;
@@ -2028,8 +2028,8 @@ ul {
 }
 
 .card__wrap span svg {
-  width: 2.2vw;
-  height: 3.07vw;
+  width: 30px;
+  height: 42px;
 }
 
 .card__wrap span::before {
@@ -2201,7 +2201,7 @@ ul {
   opacity: 0.6;
 }
 
-.games__content > a.focus-visible:active {
+.games__content > a:active {
   opacity: 0.6;
 }
 
@@ -2256,11 +2256,11 @@ ul {
   opacity: 0;
 }
 
-.coaches__card.focus-visible:active img {
-  opacity: 0.3;
+.coaches__card:active .coaches__inner-info {
+  z-index: 1;
 }
 
-.coaches__card.focus-visible:active .coaches__name {
+.coaches__card:active .coaches__name {
   opacity: 0;
 }
 
@@ -2672,6 +2672,10 @@ ul {
   outline: 1px #ffffff solid;
 }
 
+.promotion__inner-block a:active {
+  opacity: 0.6;
+}
+
 .promotion__sidebar {
   -webkit-box-flex: 1;
   -ms-flex: 1;
@@ -2753,6 +2757,10 @@ ul {
 
 .sidebar__wrap a.focus-visible:focus::before {
   outline: 1px #102654 solid;
+}
+
+.sidebar__wrap a:active {
+  opacity: 0.6;
 }
 
 .answers {
@@ -3381,7 +3389,7 @@ ul {
   color: #ffffff;
 }
 
-.social__link.focus-visible:active svg {
+.social__link:active svg {
   fill: #102654;
   color: #ffffff;
 }
@@ -4187,7 +4195,7 @@ ul {
   }
 
   .card__wrap span::before {
-    width: 31vw;
+    width: 27vw;
   }
 
   .card__wrap span::before {
@@ -4823,6 +4831,10 @@ ul {
 
   .tickets__cards {
     gap: 36px;
+  }
+
+  .card__wrap span::before {
+    width: 31vw;
   }
 
   .games__content {
