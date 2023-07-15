@@ -3892,6 +3892,7 @@ ul {
     width: 442px;
     -ms-grid-column-align: center;
     justify-self: center;
+    gap: 0;
   }
 
   .col-midl span {
@@ -4491,6 +4492,7 @@ ul {
     margin-left: -15px;
     min-height: 239px;
     margin-bottom: 42px;
+    gap: 0;
   }
 
   .col-midl span {
