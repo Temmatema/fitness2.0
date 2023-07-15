@@ -2555,10 +2555,6 @@ ul {
   margin-top: -10px;
 }
 
-.col__left span {
-  font-family: "Roboto Condensed", arial, sans-serif;
-}
-
 .col-midl {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
@@ -2625,6 +2621,7 @@ ul {
 }
 
 .col__left span {
+  font-family: "Roboto Condensed", arial, sans-serif;
   font-size: 0.7rem;
   color: #2e35ac;
   line-height: 1;
