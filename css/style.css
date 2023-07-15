@@ -4350,8 +4350,8 @@ ul {
   }
 
   .games__content {
-    width: 64.33vw;
-    min-width: 255px;
+    width: 100%;
+    max-width: 480px;
     padding: 51px 36px 49px;
   }
 
@@ -4374,8 +4374,8 @@ ul {
   }
 
   .games__image {
-    width: 64.33vw;
-    min-width: 255px;
+    width: 100%;
+    max-width: 480px;
   }
 
   .games__image img {
@@ -4983,17 +4983,9 @@ ul {
     gap: 36px;
   }
 
-  .games__content {
-    width: 100%;
-  }
-
   .games__content > a {
     font-size: 0.5rem;
     width: 202px;
-  }
-
-  .games__image {
-    width: 100%;
   }
 }
 
