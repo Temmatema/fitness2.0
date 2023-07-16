@@ -1715,8 +1715,8 @@ ul {
 .workout .container {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: auto 52.93vw;
-  grid-template-columns: auto 52.93vw;
+  -ms-grid-columns: auto 723px;
+  grid-template-columns: auto 723px;
   padding-top: 120px;
   padding-bottom: 120px;
   gap: 20px;
@@ -1728,7 +1728,7 @@ ul {
 }
 
 .workout__desc-block h2 {
-  font-size: 3.54vw;
+  font-size: 3rem;
   font-weight: 600;
   line-height: normal;
   letter-spacing: 1.44px;
