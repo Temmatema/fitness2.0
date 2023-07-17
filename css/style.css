@@ -1569,10 +1569,7 @@ ul {
   min-height: 658px;
   position: relative;
   padding-bottom: 32px;
-  background-image: url("../img/header-background.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-color: #102654;
+  background: conic-gradient(from 130.31deg at 16.03% 39.06%, #b80027 -46.69deg, #003d85 32.24deg, #b80027 313.31deg, #003d85 392.24deg);
 }
 
 .header h1,
@@ -1703,6 +1700,11 @@ ul {
 
 .header__btn.focus-visible:focus {
   outline: none;
+  background-color: #ffffff;
+  color: #103aae;
+}
+
+.header__btn:hover {
   background-color: #ffffff;
   color: #103aae;
 }
@@ -1965,7 +1967,7 @@ ul {
   display: grid;
   -ms-grid-columns: 1fr 1fr 1fr;
   grid-template-columns: 1fr 1fr 1fr;
-  gap: 2.93vw;
+  gap: 41px;
 }
 
 .card {
@@ -1990,6 +1992,12 @@ ul {
 
 .card:active {
   background: linear-gradient(169deg, rgb(209, 10, 66) 0%, rgb(0, 53, 159) 100%);
+}
+
+.card .card__button:hover {
+  background: linear-gradient(104deg, #ed0233 10%, #184eba 90%);
+  border: none;
+  color: #ffffff;
 }
 
 .card .card__button.focus-visible:focus {
@@ -3600,8 +3608,6 @@ ul {
 
   .header {
     min-height: 554px;
-    background-image: url("../img/header-background-tablet.png");
-    background-size: cover;
     padding-bottom: 0;
   }
 
@@ -3777,7 +3783,6 @@ ul {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    gap: 41px;
   }
 
   .card {
@@ -3878,8 +3883,8 @@ ul {
     row-gap: 45px;
     -ms-grid-columns: 1fr 1fr;
     grid-template-columns: 1fr 1fr;
-    -ms-grid-rows: auto 240px 1fr;
-    grid-template-rows: auto 240px 1fr;
+    -ms-grid-rows: auto auto 1fr;
+    grid-template-rows: auto auto 1fr;
   }
 
   .col__left b {
@@ -3918,7 +3923,7 @@ ul {
   }
 
   .col-midl {
-    padding: 33px 135px;
+    padding: 32px 135px 38px;
     -ms-grid-column: 1;
     -ms-grid-column-span: 2;
     grid-column: 1/3;
@@ -5027,11 +5032,6 @@ ul {
 }
 
 @media (hover: hover) {
-  .header__btn:hover:not(.focus-visible) {
-    background-color: #ffffff;
-    color: #103aae;
-  }
-
   .workout__video-handle:hover:not(.focus-visible) .play-circle-1 {
     stroke-opacity: 1;
     stroke: #102654;
@@ -5052,12 +5052,6 @@ ul {
   .tickets__button:hover:not(.focus-visible) {
     border-color: #d10a42;
     opacity: 1;
-  }
-
-  .card .card__button:hover:not(.focus-visible) {
-    background: linear-gradient(104deg, #ed0233 10%, #184eba 90%);
-    border: none;
-    color: #ffffff;
   }
 
   .games__content > a:hover:not(.focus-visible) {
